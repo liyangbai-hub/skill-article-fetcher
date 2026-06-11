@@ -1,0 +1,20 @@
+{
+  "name": "article-fetcher-skill",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "独立文章抓取脚本：链接 → Markdown / PDF，智能 fast→stealth 路由（摘要由调用 agent 做）",
+  "bin": {
+    "fetch-article": "./fetch-article.mjs"
+  },
+  "scripts": {
+    "postinstall": "playwright install chromium || true"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "turndown": "^7.2.0"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.52.0"
+  }
+}
